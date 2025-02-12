@@ -27,8 +27,7 @@ repositories {
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
-	    isCanBeConsumed = false 
-    }
+	       }
 }
 
 dependencies {
