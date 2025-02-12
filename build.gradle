@@ -7,8 +7,8 @@ plugins {
 }
 
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '21'
-targetCompatibility = '21'
+sourceCompatibility = '19'
+targetCompatibility = '19'
 
 spotless {
     java {
@@ -27,6 +27,7 @@ repositories {
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
+	    isCanBeConsumed = false 
     }
 }
 
